@@ -10,11 +10,38 @@
             font-size: 23px;
             font-weight: bold;
         }
+        .copyright{ 
+            display:inline-block;
+            margin-right: 250px;
+        } 
+        .validate{
+            display:inline-block;
+        }
+        .foot-bottom{
+            background-color: rgb(2, 3, 31); color: white;
+        }
+        .part{
+            margin-bottom: 370px;
+        }
+        body{
+            background-image: url('sky.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .profile-pic{
+            width: 140px;
+            height: 150px;
+            border-radius:70%;
+        }
+
+
     </style>
 </head>
 <body>
-    <img src="image.jpeg" height="auto" width="10%">
-    <header class="Name">
+    <img class="profile-pic" src="image.jpeg" height="auto" width="15%">
+    
+    <div class="part">
+        <header class="Name">
         Awet Tewelde
     </header>
     <ul>
@@ -43,7 +70,20 @@
         </li>
 
     </ul>
-
+    </div>
+    <div class="foot-bottom">
+        <footer>
+            <div class="copyright"> © Awet
+            </div>
+            <div class="validate"> <a href="http://validator.w3.org/check/referer">
+                <img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png
+                alt="Validate" />
+                </a>
+            </div>
+    
+        </footer>
+    </div>
+   
 
 </body>
 </html>
