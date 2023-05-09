@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Application</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <fieldset>
+                <div class="whole">
+                    <div class="name-group">
+                        <label for="name">Account Name:</label>
+                        <input type="text" id="name" name="Account name:" placeholder="name" required>
+                    </div>
+                    <div class="deposit-group">
+                        <label for="deposit">Deposit:</label>
+                        <input type="text" id="deposit" name="Balance:" placeholder="amount" required>
+                    </div>
+                    <div class="all-buttons">
+                        <div class="createtask-button">
+                            <button class="button-one" id="createtaskButton">Create new account</button>
+                        </div>
+                        <div class="deposit-button">
+                            <button class="button-two" id="depositButton">Deposit</button>
+                        </div>
+                        <div class="debit-button">
+                            <button class="button-three" id="debittaskButton">Debit</button>
+                        </div>
+                    </div>
+                    <div class="output">
+                        <textarea name="taskList" id="taskList" readonly></textarea>
+                    </div>                    
+                </div>
+                
+            </fieldset>
+        </div>
+    </div>
+    <script src="scripttjs"></script>
+</body>
+</html>
