@@ -1,0 +1,23 @@
+fieldset {
+  display: flex;
+  font-size: 18pt;
+  font-weight: lighter;
+  flex-direction: row;
+  background-color: #e0e0ff;
+  border: 2px outset gray;
+  border-radius: 10px;
+  width: 30%;
+  padding: 0px;
+}
+
+.func,
+p,
+span {
+  color: darkgrey;
+  font-weight: bold;
+}
+
+pre {
+  font-size: 14pt;
+  font-weight: bold;
+}

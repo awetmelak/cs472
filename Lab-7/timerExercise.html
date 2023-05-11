@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="decorate.css" type="text/css" rel="stylesheet" />
+    
+
+    <title>Javascript Exercises</title>
+</head>
+<body>
+    <h1>Javascript Exercises</h1>
+    <ol>
+        <li><dt>What is the differencebetween the following 2 statements?</dt>
+            <ul><li>SetTimeout(booyah, 2000);</li><span> //Calles the function after the timer goes off after 2 seconds.</span>
+                <li>SetTimeout(booyah(), 2000);</li><span> //calles the function booyah immediately rather than waiting for 2 seconds</span>
+            </ul>
+        </li>
+
+        <li><dt>What do the following 2 alerts display (answer without running the code)?</dt>
+            <pre>
+            var myfunc = function(a, x) {
+                return a * x;
+            };
+            var x = myfunc(2, 3);
+            var y = myfunc;
+            alert(x);
+            alert(y(2,3)); </pre>
+
+            <p>Both of them display 6</p>
+            
+        </li>
+
+        <li><dt>Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”</dt>
+            <ul><li>SetTimeout(booyah, 2000);</li>
+                <pre class="func">
+                    function booyah1() {
+                        alert("BOOYAH");
+                    } </pre>
+                <li>SetTimeout(booyah(), 2000);</li><br>
+                    <pre class="func">
+                function booyah2(){
+                    setTimeout(booyah1,2000);
+                }</pre>
+                    
+                
+            </ul>
+        
+        </li>
+
+        <li><dt  >What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+             <pre class="func"> -> Unobtrusive Javascript is the basic concept behind unobtrusive JavaScript (also known as "unobtrusive DOM scripting") is to 
+               provide a best practice approach to JavaScript programming that maintains usability and accessibility, and degrades gracefully.
+                Code maintainability from a programming perspective can also be considered a goal of unobtrusive JavaScript." </pre> 
+        </dt></li>
+
+    </ol>
+</body>
+</html>
