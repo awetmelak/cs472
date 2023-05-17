@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<div lang="en">
+    <script>
+        function calculTip(){
+            "use strict"
+        let subtotal = parseInt(document.getElementById("subtotal").value);
+        let rate = parseInt(document.getElementById("tip").value);
+        let totalAmount = subtotal + (rate/100) * subtotal;
+        document.getElementById("total").innerHTML="$"+totalAmount;
+        }
+        </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip.css" type="text/css">
+    <title>Tip Calculator </title>
+
+</head>
+<div>
+    <h1> <img src="calc.jpeg" alt="calculator"> Tip Calculator</h1>
+<div> <label> <input id="subtotal" type="text" pattern="[0-9]*">$ Subtotal </label> </div>
+
+ <div> <label> <input id="tip" type="text" pattern="[0-9]*">% Tip </label> </div>
+<div> <button id="btn" onclick="calculTip();"> Calculat Tip </button> </div>
+
+<hr>
+</div>
+<div><h2>Total: </h2> <p id="total">$0.00</p> </div>
+
+ 
+</body>
+</html>
