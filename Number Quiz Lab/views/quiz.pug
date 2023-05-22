@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/style.css")
+    title Quiz
+  body
+    .container
+      h1.title The Number Quiz
+      .row
+        label.score-label Your Current Score is: 
+        label #{score}
+      p.instruction Guess the next number in the sequence.
+      .sequence-container
+        p #{sequence.join(', ')}
+      form(action="/", method="post")
+        .row
+          label.answer-lable Your answer: 
+          input(type="number", name="answer")
+        button.primary(type="submit") Submit
